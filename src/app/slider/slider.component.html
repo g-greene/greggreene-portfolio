@@ -1,0 +1,11 @@
+<div class="slider option--mode-inline" (click)="onClickMain()" (mouseover)="onMouseOverMain()" (mouseout)="onMouseOutMain()">
+    <div #sliderAreaBackward class="slider-area-backward" (click)="slideBackward()" (mouseover)="onMouseOverMain()" (mouseout)="onMouseOutMain()">
+        <div #sliderButtonBackward class="slider-button-backward"></div>
+    </div>
+    <div #sliderAreaForward class="slider-area-forward" (click)="slideForward()" (mouseover)="onMouseOverMain()" (mouseout)="onMouseOutMain()">
+        <div #sliderButtonForward class="slider-button-forward"></div>
+    </div>
+    <div #sliderContent class="slider-content no-padding-for-medium-down">
+        <ng-template panelHost></ng-template>
+    </div>
+</div>

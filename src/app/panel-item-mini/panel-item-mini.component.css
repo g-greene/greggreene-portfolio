@@ -1,0 +1,30 @@
+.slider-mini-panel {
+    border-left-width: 0;
+    border-left-color: transparent; /*#ff037c;*/
+    border-radius: 2em;
+    background-color: #ff007bc7;
+  }
+
+  .slider-mini-panel > .slider-mini-panel-content {
+    color:#fff;
+    line-height: 1.5rem;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 851px) {
+    .slider-mini-panel > .slider-mini-panel-content {
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 851px) {
+    .slider-mini-panel {
+        min-width: 92.5vw !important;
+        max-width: 90% !important;
+        -max-height: 550px;
+        -min-height: 250px;
+    }
+}

@@ -1,0 +1,7 @@
+/* slider */
+
+.slider {
+  top: 0; /*calc(30% - 25%);*/
+  height: 85%;
+  padding: 0em 0em;
+}

@@ -1,0 +1,13 @@
+<ng-template #dialogTemplate>
+    <h2 #dialogTitle matDialogTitle class="dialog-generic-title"></h2>
+    <mat-dialog-content class="no-overflow">
+        <div class="cover-width">
+            <span #dialogMessage class="dialog-generic-message"></span>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button #buttonOk class="dialog-generic-button-ok" mat-button color="primary" [mat-dialog-close]="true"></button>
+        <button #buttonCancel class="dialog-generic-button-cancel" mat-button color="primary" [mat-dialog-close]="false"></button>
+    </mat-dialog-actions>
+  </ng-template>
+  

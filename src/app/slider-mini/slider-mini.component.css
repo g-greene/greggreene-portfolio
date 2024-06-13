@@ -1,0 +1,16 @@
+.slider-mini {
+    position: relative;
+    width: unset;
+    height: 100%;
+}
+
+.slider-mini > .slider-mini-content {
+    height:100%;
+}
+
+@media only screen and (max-width: 851px) {
+    .slider-mini .slider-mini-content {
+        padding: 0em 0.75em !important;
+    }
+}
+

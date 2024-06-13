@@ -1,0 +1,18 @@
+stage-animation {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+  
+stage-animation-header {
+    flex-basis: 15%;
+}
+
+stage-animation-body {
+    flex-basis: 70%;
+}
+
+stage-animation-footer {
+    flex-basis: 15%;
+}

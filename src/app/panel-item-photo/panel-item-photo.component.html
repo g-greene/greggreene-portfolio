@@ -1,0 +1,28 @@
+<div #sliderPanel id="slider_panel_{{data.id}}" class="slider-panel relative" style="--slide-x-end:25rem;--size-factor:0.725;--anim-height-to:75%;background-repeat:no-repeat;" (click)="onClick()" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()" (mouseleave)="onMouseLeave()">
+    <div #sliderPanelBackground class="slider-panel-background hover-zoom" style="--zoom-scale-x-to:1.1;--zoom-scale-y-to:1.1;">
+        <div #sliderPanelHeader class="slider-panel-header">
+            <div #sliderPanelTitle class="slider-panel-title"><span class="hide">{{data.headline}}</span></div>
+            <div #sliderPanelButtonControls class="slider-panel-controls">
+                <div #sliderPanelButtonClose class="slider-panel-control control-close fa-xmark fa-solid hide" (click)="onClickClose($event)"></div>
+            </div>
+        </div>
+        <div class="slider-panel-content flow-column justify-left align-content-flex-end" style="pointer-events:none !important;">
+            &nbsp;
+        </div>
+    </div>
+    <div #sliderPanelFlyout class="flyout option--position-bottom-center cover-width" style="flex:100% 1 1;width:100%;left:0;opacity:0.9;--flyout-height:33%;--flyout-cover-amount:100%;" (mouseover)="onMouseOverFlyout()" (mouseleave)="onMouseLeaveFlyout()">
+        <div class="flyout-content shadowed justify-flex-start" style="width:100%;left:0;backdrop-filter: blur(50%);--shadow-color:#000;">
+            <div class="flex-row-container" style="">
+                <div class="flex-row bold">
+                    <span class="bg-white border-round-sm padding-lr-sm font-lg" style="color:#ff037c;">{{data.title}}</span>&nbsp;&nbsp;&nbsp;<span class="block font-sm clickable"><a href="{{data.url}}" target="_blank">{{data.url}}</a></span>
+                </div>
+                <div #sliderPanelContent class="flex-content font-md-lg bold" style="color:#290114;">
+                    {{data.body}}
+                </div>
+                <div class="flex-content">
+                    <span class="bold font-md"><span class="fa-solid fa-wrench padding-sm"></span>Made with:&nbsp;</span><span class="font-md">{{data.technology}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

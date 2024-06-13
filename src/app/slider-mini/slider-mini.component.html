@@ -1,0 +1,12 @@
+<div class="slider-mini" (click)="onClickMain()" (mouseover)="onMouseOverMain()" (mouseout)="onMouseOutMain()">
+    <div #sliderAreaBackward class="slider-mini-area-backward-hide" (click)="slideBackward()">
+        <div class="slider-mini-button-backward"></div>
+    </div>
+    <div #sliderAreaForward class="slider-mini-area-forward-hide" (click)="slideForward()">
+        <div class="slider-mini-button-forward"></div>
+    </div>
+    <div #sliderContent class="slider-mini-content">
+        <ng-template panelHost></ng-template>
+    </div>
+</div>
+
